@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_formations" >
+        <item>DITI</item>
+        <item>GL</item>
+        <item>RT</item>
+        <item>RI</item>
+        <item>IG</item>
+        <item>GDA</item>
+    </string-array>
+    <string-array name="tab_details" >
+        <item>DITI. Détails</item>
+        <item>GL. Détails</item>
+        <item>RT. Détails</item>
+        <item>RI. Détails</item>
+        <item>IG. Détails</item>
+        <item>GDA. Détails</item>
+    </string-array>
+</resources>
