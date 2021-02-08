@@ -48,7 +48,11 @@ public class FragmentFormation extends Fragment {
                         dialog.setPositiveButton(getString(R.string.inscription), new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-
+                                //Appel à la page inscription
+                                getFragmentManager().beginTransaction()
+                                        .replace(R.id.nav_host_fragment,new InscriptionFragment())
+                                        .addToBackStack(null)
+                                        .commit();
                             }//simuler le clique qui nous redirige vers une autre page
                         });
                         dialog.show();

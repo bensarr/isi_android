@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class InscriptionFragment extends Fragment {
 
@@ -31,6 +32,25 @@ public class InscriptionFragment extends Fragment {
         btnSave=view.findViewById(R.id.btnSave);
 
         btnSave.setOnClickListener(v -> {
+            firstName=txtFirstName.getText().toString().trim();
+            lastName=txtLastName.getText().toString().trim();
+            degrees="";
+            if(cbOLevel.isChecked())
+            {
+                degrees+=cbOLevel.getText().toString()+" ";
+            }
+            if(cbBachelor.isChecked())
+            {
+                degrees+=cbBachelor.getText().toString()+" ";
+            }
+            if(cbMaster.isChecked())
+            {
+                degrees+=cbMaster.getText().toString()+" ";
+            }
+            else {
+                String resume= firstName+"\n\n"+lastName+"\n\n"+degrees;
+                Toast.makeText(getActivity(),resume ,Toast.LENGTH_SHORT).show();
+            }
 
         });
 

@@ -89,4 +89,5 @@ isi.txt
 isi.txt est maintenant affiché.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_university">Map</string>
 </resources>
