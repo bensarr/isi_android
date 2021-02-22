@@ -76,4 +76,10 @@ Grace a son expertise et la qualité de ses services, Le Groupe ISI délivre des
 Avec une offre de formation diversifiée dans les métiers d\'avenir, une innovation permanente de ses programmes, et les brillants résultats obtenus aux différents examens et concours, L\'Institut Supérieur d\'informatique  » ISI » est leader dans son domaine au Sénégal et dans la sous-région.
 isi.txt
 isi.txt est maintenant affiché.</string>
+
+
+    <string name="label_users">Utilisateurs</string>
+    <string name="save_user">Enregistrer</string>
+    <string name="delete_user">Supprimer</string>
+    <string name="update_user">Modifier</string>
 </resources>

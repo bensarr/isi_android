@@ -18,7 +18,8 @@ public class FragmentFormation extends Fragment {
     private ListView lvwFormations;
     private String[] tab_formation,tab_details;
 
-    private String formation,details;
+    private String details;
+    public static String formation;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -33,31 +34,28 @@ public class FragmentFormation extends Fragment {
         lvwFormations.setAdapter(adapter);
 
         lvwFormations.setOnItemClickListener(
-                new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                (parent, view1, position, id) -> {
 
-                        formation= tab_formation[position];
-                        details= tab_details[position];
+                    formation= tab_formation[position];
+                    details= tab_details[position];
 
-                        AlertDialog.Builder dialog=new AlertDialog.Builder(getActivity());
-                        dialog.setIcon(R.mipmap.ic_launcher);
-                        dialog.setTitle(formation);
-                        dialog.setMessage(details);
-                        dialog.setNegativeButton(getString(R.string.cancel),null);//nuul pour fermer la boite de dialogue
-                        dialog.setPositiveButton(getString(R.string.inscription), new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                //Appel à la page inscription
-                                getFragmentManager().beginTransaction()
-                                        .replace(R.id.nav_host_fragment,new InscriptionFragment())
-                                        .addToBackStack(null)
-                                        .commit();
-                            }//simuler le clique qui nous redirige vers une autre page
-                        });
-                        dialog.show();
+                    AlertDialog.Builder dialog=new AlertDialog.Builder(getActivity());
+                    dialog.setIcon(R.mipmap.ic_launcher);
+                    dialog.setTitle(formation);
+                    dialog.setMessage(details);
+                    dialog.setNegativeButton(getString(R.string.cancel),null);//nuul pour fermer la boite de dialogue
+                    dialog.setPositiveButton(getString(R.string.inscription), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            //Appel à la page inscription
+                            getFragmentManager().beginTransaction()
+                                    .replace(R.id.nav_host_fragment,new InscriptionFragment())
+                                    .addToBackStack(null)
+                                    .commit();
+                        }//simuler le clique qui nous redirige vers une autre page
+                    });
+                    dialog.show();
 
-                    }
                 }
         );
 

@@ -30,6 +30,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/prompt_password"
         android:layout_marginTop="@dimen/dim_title"
+        android:inputType="textPassword"
         android:gravity="center"
         />
     <Button

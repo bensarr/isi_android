@@ -22,4 +22,14 @@
         android:name="dev.benswift.tp1.UniversityFragment"
         android:label="@string/university"
         tools:layout="@layout/fragment_university" />
+    <fragment
+        android:id="@+id/nav_marks"
+        android:name="dev.benswift.tp1.MarksFragment"
+        android:label="@string/marks"
+        tools:layout="@layout/fragment_marks" />
+    <fragment
+        android:id="@+id/nav_sqlite"
+        android:name="dev.benswift.tp1.SqliteFragment"
+        android:label="@string/label_users"
+        tools:layout="@layout/fragment_sqlite" />
 </navigation>

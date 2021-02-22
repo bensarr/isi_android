@@ -24,5 +24,9 @@
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_help"
             android:title="@string/helps" />
+        <item
+            android:id="@+id/nav_sqlite"
+            android:icon="@drawable/ic_help"
+            android:title="@string/label_users" />
     </group>
 </menu>

@@ -90,4 +90,9 @@ isi.txt est maintenant affiché.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_university">Map</string>
+
+    <string name="label_users">Users</string>
+    <string name="save_user">Save</string>
+    <string name="delete_user">Delete</string>
+    <string name="update_user">Update</string>
 </resources>

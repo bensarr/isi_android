@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dim_all"
+    tools:context=".MarksFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tvMarks"
+        android:textSize="@dimen/dim_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/marks" />
+    <Button
+        android:id="@+id/btnMark"
+        android:text="@string/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

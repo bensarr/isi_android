@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SqliteFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dim_top"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txtLoginUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_username"
+            android:layout_marginTop="@dimen/dim_title"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/txtPasswordUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_password"
+            android:layout_marginTop="@dimen/dim_title"
+            android:gravity="center"
+            />
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_marginTop="@dimen/dim_all"
+            android:layout_marginBottom="@dimen/dim_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_user"
+            android:backgroundTint="@color/purple_500"
+            android:textSize="30dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_users"
+            android:textSize="@dimen/dim_title"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:gravity="center_horizontal" />
+
+        <ListView
+            android:id="@+id/lvwUsers"
+            android:layout_width="match_parent"
+            android:layout_height="316dp"
+            android:minHeight="@dimen/dim_middle" />
+    </LinearLayout>
+
+
+</ScrollView>
