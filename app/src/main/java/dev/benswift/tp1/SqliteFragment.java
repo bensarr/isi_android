@@ -1,8 +1,6 @@
 package dev.benswift.tp1;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -18,12 +16,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 import dev.benswift.tp1.model.Utilisateur;
@@ -110,8 +106,7 @@ public class SqliteFragment extends Fragment {
             dialog.setNeutralButton(getString(R.string.delete_user), (dialog1, which) -> {
                 int i=db.userDelete(u);
                 if(i>0) {
-                    listUsers.clear();
-                    listUsers.addAll(db.userGetAll());
+                    listUsers.remove(u);
                     adapter.notifyDataSetChanged();
                     Toast.makeText(getActivity(), "SUCCES Suppression Utilisateur ",
                             Toast.LENGTH_LONG).show();
